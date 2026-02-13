@@ -1,24 +1,5 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
-
-  /**
-   * colors
-   */
 
   --rich-black-fogra-29: hsl(210, 26%, 7%);
   --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
@@ -40,10 +21,6 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
 
-  /**
-   * typography
-   */
-
   --ff-shadows-into-light: 'Shadows Into Light', cursive;
   --ff-roboto: 'Roboto', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
@@ -58,42 +35,21 @@
   --fw-600: 600;
   --fw-700: 700;
 
-  /**
-   * spacing
-   */
-
   --section-padding: 60px;
 
-  /**
-   * shadow
-   */
 
   --shadow-1: 0 1px 4px hsla(0, 0%, 0%, 0.2);
   --shadow-2: 0 1px 2px hsla(0, 0%, 0%, 0.2);
 
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
 
-  /**
-   * clip path
-   */
 
   --clip-path-1: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
   --clip-path-2: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
 
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -172,13 +128,6 @@ body.active { overflow: hidden; }
 
 ::-webkit-scrollbar-thumb:hover { background-color: var(--tangerine); }
 
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -323,13 +272,7 @@ body.active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
-/* .navbar, */
+/* navbar styles */
 .header-btn-group .btn { display: none; }
 
 .header {
@@ -452,12 +395,6 @@ body.active { overflow: hidden; }
 .navbar-link:is(:hover, :focus) { color: var(--dark-orange); }
 
 
-
-
-/*-----------------------------------*\
-  #SEARCH BOX
-\*-----------------------------------*/
-
 .search-container {
   position: fixed;
   top: -60%;
@@ -521,9 +458,9 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+/* HERO TIME BABY */
+  
+
 
 .hero-banner { display: none; }
 
@@ -567,9 +504,7 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #PROMO
-\*-----------------------------------*/
+/* CARD*/
 
 .promo-card {
   position: relative;
@@ -628,9 +563,7 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
+/*ABOUT INFORMATION*/
 
 .about { text-align: center; }
 
@@ -684,13 +617,7 @@ body.active { overflow: hidden; }
 .about .btn { margin-inline: auto; }
 
 
-
-
-
-/*-----------------------------------*\
-  #FOOD MENU
-\*-----------------------------------*/
-
+/*ITEMS*/
 .food-menu {
   background-color: var(--isabelline);
   text-align: center;
@@ -810,13 +737,6 @@ body.active { overflow: hidden; }
 .food-menu-card .del { color: var(--gray-x-11-gray); }
 
 
-
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
 .cta {
   background-repeat: no-repeat;
   background-size: cover;
@@ -860,13 +780,6 @@ body.active { overflow: hidden; }
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #DELIVERY
-\*-----------------------------------*/
-
 .delivery-content { margin-block-end: 40px; }
 
 .delivery .section-title {
@@ -890,13 +803,6 @@ body.active { overflow: hidden; }
   transition: var(--transition-2);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #TESTIMONIALS
-\*-----------------------------------*/
 
 .testi { text-align: center; }
 
@@ -941,13 +847,6 @@ body.active { overflow: hidden; }
   scroll-snap-align: start;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #BANNER
-\*-----------------------------------*/
 
 .banner { color: var(--white); }
 
@@ -1024,13 +923,6 @@ body.active { overflow: hidden; }
 
 .banner-card .btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
 
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
 
 .blog { text-align: center; }
 
@@ -1130,13 +1022,7 @@ body.active { overflow: hidden; }
   gap: 10px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+/*FOOTER INFORMATION*/
 
 .footer { overflow: hidden; }
 
@@ -1267,14 +1153,6 @@ textarea.input-field {
 
 .copyright-link:is(:hover, :focus) { text-decoration: underline; }
 
-
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
 .back-top-btn {
   position: fixed;
   bottom: 10px;
@@ -1299,22 +1177,8 @@ textarea.input-field {
 .back-top-btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
 
 
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 480px screen
- */
-
 @media (min-width: 480px) {
 
-  /**
-   * HEADER
-   */
 
   .header-btn-group .btn {
     display: block;
@@ -1322,20 +1186,7 @@ textarea.input-field {
   }
   
 }
-
-
-
-
-
-/**
- * responsive for larger than 550px screen
- */
-
 @media (min-width: 550px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 550px;
@@ -1345,45 +1196,16 @@ textarea.input-field {
 
   .has-scrollbar > li { min-width: calc(50% - 5px); }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero-title { --fs-1: 4.2rem; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container { grid-template-columns: 1fr 1fr; }
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 720px; }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero {
     position: relative;
@@ -1424,12 +1246,6 @@ textarea.input-field {
     z-index: -1;
   }
 
-
-
-  /**
-   * ABOUT
-   */
-
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1445,22 +1261,12 @@ textarea.input-field {
   .about-item { justify-content: flex-start; }
 
 
-
-  /**
-   * FOOD MENU
-   */
-
   .food-menu-list { grid-template-columns: 1fr 1fr; }
 
   .food-menu-card :is(.wrapper, .price-wrapper) { justify-content: flex-start; }
 
   .food-menu-card .card-title { text-align: left; }
 
-
-
-  /**
-   * CTA
-   */
 
   .cta .container {
     display: grid;
@@ -1475,12 +1281,6 @@ textarea.input-field {
 
   .cta-img { transform: scale(1.3) translate(90px, 20px); }
 
-
-
-  /**
-   * DELIVERY
-   */
-
   .delivery .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1488,11 +1288,6 @@ textarea.input-field {
     gap: 50px;
   }
 
-
-
-  /**
-   * BANNER
-   */
 
   .banner-list { grid-template-columns: repeat(4, 1fr); }
 
@@ -1507,67 +1302,28 @@ textarea.input-field {
     height: 220px;
   }
 
-
-
-  /**
-   * BLOG
-   */
-
   .blog-list { grid-template-columns: 1fr 1fr; }
 
   .blog-card { height: 100%; }
 
 
-
-  /**
-   * FOOTER
-   */
-
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * spacing
-     */
 
     --section-padding: 120px;
 
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 960px; }
 
   .has-scrollbar > li { min-width: calc(33.33% - 6.66px); }
 
   .h2 { --fs-1: 4.2rem; }
-
-
-
-  /**
-   * HEADER
-   */
 
   .nav-toggle-btn { display: none; }
 
@@ -1592,12 +1348,6 @@ textarea.input-field {
     color: var(--btn-color);
     letter-spacing: -0.5px;
   }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero {
     min-height: 660px;
@@ -1624,20 +1374,10 @@ textarea.input-field {
   .hero-img-bg { transform: scale(1.4) translate(20px, -20px); }
 
 
-
-  /**
-   * FOOD MENU
-   */
-
   .food-menu-list { grid-template-columns: repeat(3, 1fr); }
 
   .food-menu-card { height: 100%; }
 
-
-
-  /**
-   * CTA
-   */
 
   .cta-img { transform: scale(1.4) translate(20px, 40px); }
 
@@ -1645,11 +1385,6 @@ textarea.input-field {
 
   :is(.cta, .delivery) .section-title { line-height: 1.2; }
 
-
-
-  /**
-   * BANNER
-   */
 
   .banner-lg .banner-title {
     --fs-1: 3.6rem;
@@ -1660,38 +1395,13 @@ textarea.input-field {
   .banner-lg .banner-subtitle { --fs-2: 3.2rem; }
 
 
-
-  /**
-   * TESTIMONIALS
-   */
-
   .testi-list { padding-block-end: 0; }
-
-
-
-  /**
-   * BLOG
-   */
-
   .blog-list { grid-template-columns: repeat(3, 1fr); }
 
   .blog-card .card-title { --fs-3: 2.2rem; }
 
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-top .container { grid-template-columns: 1fr 1fr 1fr 1.6fr; }
-
   .footer-form { margin-block-start: -170px; }
-
-
-
-  /**
-   * BACK TO TOP
-   */
 
   .back-top-btn {
     bottom: 20px;
@@ -1700,70 +1410,17 @@ textarea.input-field {
 
 }
 
-
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1200px; }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero { min-height: 770px; }
-
-
-
-  /**
-   * PROMO
-   */
-  
   .promo .promo-item { min-width: calc(25% - 7.5px); }
-
-
-
-  /**
-   * ABOUT
-   */
-
   .about .container { gap: 60px; }
-
-
-
-  /**
-   * CTA
-   */
-
   .cta { --section-padding: 60px; }
 
   .cta .section-title { max-width: 18ch; }
-
-
-
-  /**
-   * BANNER
-   */
-
   .banner-md .banner-item-content { left: 55%; }
-
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-top .container { grid-template-columns: 1.4fr 1fr 1fr 1.6fr; }
 
 }
